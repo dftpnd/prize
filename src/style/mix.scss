@@ -3,11 +3,12 @@ $size-m: 768px;
 $size-l: 992px;
 $size-xl: 1200px;
 
-$color-light: darken(#D8C4BE, 20%);
+$color-light: #D8C4BE;
 $color-dark: #1A2041;
 $color-footer-bg: #060514;
 $color-footer-line: #A1787E;
 $grey: #666666;
+$sub-color: darken($color-light, 20%);
 
 
 $col-1: calc((100% / 12) * 1);

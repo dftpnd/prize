@@ -1,0 +1,76 @@
+@import "mix";
+
+.news {
+  margin-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  padding-right: .5rem;
+  padding-left: .5rem;
+
+
+  &__header {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $grey;
+    margin-bottom: 1rem;
+  }
+
+  &__date {
+    font-size: 14px;
+    margin-bottom: 1rem;
+    color: $color-light;
+  }
+
+  &__title {
+    @include subtitle(20px, 1.3);
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    @include text();
+    margin-bottom: 2rem;
+    @include subtitle(18px, 1.4);
+    color: $grey;
+  }
+
+  &__item {
+    flex: 1 0 30%;
+    margin-bottom: 4rem;
+  }
+
+  &__more {
+    text-decoration: none;
+    color: $color-dark;
+    font-size: 16px;
+  }
+
+
+
+  @media (min-width: $size-s) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-left: $col-1;
+    margin-right: $col-1;
+    margin-bottom: 10rem;
+
+    padding-right: 0;
+    padding-left: 0;
+
+    &__item:nth-child(2) {
+      margin-right: 2rem;
+      margin-left: 2rem;
+    }
+  }
+
+  @media (min-width: $size-m) {
+
+  }
+
+  @media (min-width: $size-l) {
+
+  }
+
+  @media (min-width: $size-xl) {
+
+  }
+}

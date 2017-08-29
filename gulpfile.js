@@ -10,7 +10,7 @@ var ejs = require('gulp-ejs');
 var fs = require('fs');
 
 gulp.task('sass', function () {
-    return gulp.src('src/style/**/*.scss')
+    return gulp.src('src/style/**/index.scss')
         .pipe(sass())
         .pipe(cssmin())
         .pipe(gulp.dest('dist/style/'));
@@ -28,7 +28,7 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('sections', ['sass'], function () {
-    var criticalStyle = fs.readFileSync('./dist/style/main.css', 'utf8');
+    var criticalStyle = fs.readFileSync('./dist/style/index.css', 'utf8');
     var version = '4';
     return gulp.src('./src/*.ejs')
         .pipe(ejs({criticalStyle: criticalStyle, version: version}, {}, {ext: '.html'}))
