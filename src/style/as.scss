@@ -8,6 +8,13 @@
   margin-bottom: 6rem;
   padding-bottom: 5rem;
 
+  //.status{
+  //  width: 100%;
+  //  flex: 1;
+  //}
+  &__limit {
+    padding: 0 1rem;
+  }
   &__view {
     text-align: center;
   }
@@ -16,6 +23,8 @@
     flex: 1;
     margin-top: 5rem;
     padding-left: 1rem;
+    display: flex;
+    align-items: flex-end;
   }
   &__sub {
     margin-top: 5.5rem;
@@ -39,6 +48,8 @@
   &__slides {
     display: flex;
     margin-bottom: 2rem;
+    //width: 100%;
+    //flex: 1;
   }
 
   &__slide {
@@ -46,6 +57,10 @@
   }
 
   @media (min-width: $size-s) {
+
+  }
+
+  @media (min-width: $size-m) {
     margin-bottom: 8rem;
     align-items: stretch;
     flex-direction: row;
@@ -61,10 +76,6 @@
     &__block {
       padding-left: 0;
     }
-  }
-
-  @media (min-width: $size-m) {
-
   }
 
   @media (min-width: $size-l) {
