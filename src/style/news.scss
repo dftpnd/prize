@@ -3,10 +3,11 @@
 .news {
   margin-bottom: 6rem;
   display: flex;
-  flex-direction: column;
+  //flex-direction: column;
   padding-right: .5rem;
   padding-left: .5rem;
-
+  justify-content: center;
+  flex-wrap: wrap;
 
   &__header {
     padding-bottom: 1rem;
@@ -27,13 +28,12 @@
 
   &__text {
     @include text();
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     @include subtitle(18px, 1.4);
     color: $grey;
   }
 
   &__item {
-    flex: 1 0 30%;
     margin-bottom: 4rem;
   }
 
@@ -42,32 +42,44 @@
     color: $color-dark;
     font-size: 16px;
   }
+  &__aside {
+    flex: 2;
+  }
 
+  &__post {
+    width: 100%;
+  }
+  &__img {
+    width: 100%;
 
-
+  }
   @media (min-width: $size-s) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-    margin-left: $col-1;
-    margin-right: $col-1;
-    margin-bottom: 10rem;
 
-    padding-right: 0;
-    padding-left: 0;
+  }
+
+  @media (min-width: $size-m) {
+    justify-content: space-between;
+    &__aside {
+      width: 100%;
+      flex: 1 100%;
+    }
+    &__post {
+      flex: 1;
+      max-width: 48%;
+    }
+  }
+
+  @media (min-width: $size-l) {
+    justify-content: center;
+    &__item {
+      flex: 1 0 30%;
+      max-width: 300px;
+    }
 
     &__item:nth-child(2) {
       margin-right: 2rem;
       margin-left: 2rem;
     }
-  }
-
-  @media (min-width: $size-m) {
-
-  }
-
-  @media (min-width: $size-l) {
-
   }
 
   @media (min-width: $size-xl) {

@@ -6,7 +6,8 @@
   display: flex;
   list-style: none;
   justify-content: space-between;
-  padding: 1rem 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   margin: 0 0 10rem 0;
 
   &__logo {
@@ -30,7 +31,8 @@
   }
 
   @media (min-width: $size-l) {
-
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   @media (min-width: $size-xl) {

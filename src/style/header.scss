@@ -22,10 +22,7 @@
   }
 
   @media (min-width: $size-s) {
-    &__navigation {
-      display: flex;
-      justify-content: space-between;
-    }
+
   }
 
   @media (min-width: $size-m) {
@@ -33,7 +30,10 @@
   }
 
   @media (min-width: $size-l) {
-
+    &__navigation {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   @media (min-width: $size-xl) {

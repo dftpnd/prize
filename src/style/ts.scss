@@ -80,7 +80,31 @@
   }
 
   @media (min-width: $size-s) {
+
+  }
+
+
+
+  @media (max-width: $size-l) {
+    &__nav {
+      justify-content: flex-start;
+      padding-left: 266px;
+    }
+  }
+  @media (max-width: 554px) {
+    &__nav {
+      justify-content: flex-end;
+      padding-left: 0;
+    }
+  }
+  @media (min-width: $size-l) {
     margin-bottom: 10rem;
+
+    &__nav {
+      display: flex;
+      justify-content: flex-end;
+      padding-left: 0;
+    }
 
     &__body {
       background: none;
@@ -115,14 +139,6 @@
     &__header {
       padding-bottom: 9rem;
     }
-  }
-
-  @media (min-width: $size-m) {
-
-  }
-
-  @media (min-width: $size-l) {
-
   }
 
   @media (min-width: $size-xl) {

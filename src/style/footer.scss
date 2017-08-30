@@ -8,10 +8,12 @@
   position: relative;
   padding-top: 4rem;
   padding-bottom: 4rem;
+  //overflow: hidden;
 
   &:after {
     position: absolute;
-    width: 100%;
+    left: 0;
+    right: 0;
     bottom: 0;
     content: '';
     height: .7rem;
@@ -56,6 +58,10 @@
   }
 
   @media (min-width: $size-s) {
+
+  }
+
+  @media (min-width: $size-m) {
     flex-direction: row;
 
     &__block {
@@ -76,10 +82,6 @@
       padding-left: 0;
       padding-bottom: 0
     }
-  }
-
-  @media (min-width: $size-m) {
-
   }
 
   @media (min-width: $size-l) {

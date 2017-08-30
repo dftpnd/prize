@@ -8,6 +8,7 @@
   &__view, &__form {
     flex-grow: 0;
   }
+
   &__view {
     background: url(images/image-380-900.svg) center center;
   }
@@ -23,11 +24,7 @@
   }
 
   @media (min-width: $size-s) {
-    flex-direction: row;
 
-    &__view, &__form {
-      width: 50%;
-    }
   }
 
   @media (min-width: $size-m) {
@@ -35,7 +32,11 @@
   }
 
   @media (min-width: $size-l) {
+    flex-direction: row;
 
+    &__view, &__form {
+      width: 50%;
+    }
   }
 
   @media (min-width: $size-xl) {
